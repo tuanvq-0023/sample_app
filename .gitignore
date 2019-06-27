@@ -22,9 +22,5 @@
 
 .byebug_history
 /config/database.yml
-<<<<<<< HEAD
 /test/*
 
-=======
-/test/*
->>>>>>> Initialize Project
