@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= yield :title %> | Ruby on Rails Tutorial Sample App</title>
+    <title><%= full_title yield :title %></title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track": "reload" %>
@@ -11,4 +11,7 @@
   <body>
     <%= yield %>
   </body>
+  <% I18n.available_locales.each do |lang| %>
+    <%= link_to t(lang), locale:lang%>
+  <% end %>
 </html>
