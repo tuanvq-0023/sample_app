@@ -22,6 +22,11 @@ en:
       home: "Home"
       help: "Help"
       log_in: "Login"
+      users: "Users"
+      account: "Account"
+      profile: "Profile"
+      settings: "Settings"
+      log_out: "Logout"
   static_pages:
     about:
       about: "About"
@@ -71,3 +76,12 @@ en:
       user_not_found: "User not found"
   error_messages:
     the_form_contains: "The form contains"
+  sessions:
+    new:
+      log_in: "Login"
+      email: "Email"
+      password: "Password"
+      new_user: "New User"
+      sign_up_now: "Sign up now"
+    create:
+      invalid_user_info: "Invalid email/password combination"

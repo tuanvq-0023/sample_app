@@ -22,6 +22,11 @@ ja:
       home: "ホーム"
       help: "ヘルプ"
       log_in: "ログイン"
+      users: "ユーザー"
+      account: "アカウント"
+      profile: "プロフィール"
+      settings: "設定"
+      log_out: "ログアウト"
   static_pages:
     about:
       about: "およそ"
@@ -71,3 +76,12 @@ ja:
       user_not_found: "ユーザーが見つかりません"
   error_messages:
     the_form_contains: "フォームに含まれる"
+  sessions:
+    new:
+      log_in: "ログイン"
+      email: "メール"
+      password: "パスワード"
+      new_user: "新しいユーザー"
+      sign_up_now: "登録!"
+    create:
+      invalid_user_info: "無効なメールアドレス/パスワード"
