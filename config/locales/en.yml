@@ -83,5 +83,6 @@ en:
       password: "Password"
       new_user: "New User"
       sign_up_now: "Sign up now"
+      remember_me: "Remember me"
     create:
       invalid_user_info: "Invalid email/password combination"
