@@ -55,6 +55,19 @@ en:
       this_is_the_home_page_for_the: "This is the home page for the"
       welcome_to_the: "Welcome to the"
   users:
+    create:
+      welcome_to_the_sample_app: "Welcome to the Sample App"
     new:
+      create_my_account: "Create My Account"
+      email: "Email"
+      name: "Name"
+      password: "Password"
+      password_confirmation: "Password Confirmation"
       sign_up: "Sign up"
       signup_page_for_new_users: "This will be a signup page for new users"
+    invalid_user:
+      invalid_user: "Invalid User"
+      something_wrong: "Sorry, something went wrong"
+      user_not_found: "User not found"
+  error_messages:
+    the_form_contains: "The form contains"
