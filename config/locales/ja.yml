@@ -83,5 +83,6 @@ ja:
       password: "パスワード"
       new_user: "新しいユーザー"
       sign_up_now: "登録!"
+      remember_me: "アカウントを覚えます"
     create:
       invalid_user_info: "無効なメールアドレス/パスワード"
