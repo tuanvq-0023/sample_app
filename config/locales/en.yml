@@ -62,18 +62,40 @@ en:
   users:
     create:
       welcome_to_the_sample_app: "Welcome to the Sample App"
-    new:
-      create_my_account: "Create My Account"
+    form:
       email: "Email"
       name: "Name"
       password: "Password"
       password_confirmation: "Password Confirmation"
+    new:
+      create_my_account: "Create My Account"
       sign_up: "Sign up"
       signup_page_for_new_users: "This will be a signup page for new users"
-    invalid_user:
-      invalid_user: "Invalid User"
-      something_wrong: "Sorry, something went wrong"
-      user_not_found: "User not found"
+    show:
+      user_not_found: "User's profile not found"
+    update:
+      profile_updated: "Profile has been updated"
+      profile_update_failed: "Profile has not updated"
+      user_not_found: "User not found for updating profile"
+      user_not_match: "User not match"
+    destroy:
+      deleted_user: "User has been deleted"
+      deleted_failed: "Delete failed"
+      user_not_found: "User not found for destroying"
+      permission_denied: "Permission denied! You are not admin"
+    index:
+      all_users: "All Users"
+      please_log_in: "Please login"
+    user:
+      delete: "Delete"
+      confirm: "Are you sure to delete this user?"
+    edit:
+      edit_user: "Edit User"
+      save_changes: "Save changes"
+      update_your_profile: "Update your profile"
+      change: "Change"
+      user_not_found: "User's profile not found"
+      user_not_match: "User not match"
   error_messages:
     the_form_contains: "The form contains"
   sessions:
@@ -86,3 +108,10 @@ en:
       remember_me: "Remember me"
     create:
       invalid_user_info: "Invalid email/password combination"
+  views:
+    pagination:
+      first: "&laquo; First"
+      last: "Last &raquo;"
+      previous: "&lsaquo; Prev"
+      next: "Next &rsaquo;"
+      truncate: "&hellip;"

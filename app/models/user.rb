@@ -2,6 +2,7 @@ class User < ApplicationRecord
   attr_accessor :remember_token
   before_save :downcase_email
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
+  paginates_per Settings.max_user_query_per_page
 
   validates :name,
     presence: true,
@@ -31,7 +32,7 @@ class User < ApplicationRecord
 
   def remember
     self.remember_token = User.new_token
-    update id, remember_digest: User.digest(remember_token)
+    update remember_digest: User.digest(remember_token)
   end
 
   def authenticated? remember_token
@@ -40,11 +41,12 @@ class User < ApplicationRecord
   end
 
   def forget
-    update id, remember_digest: nil
+    update remember_digest: nil
   end
 
   private
+
   def downcase_email
-    self.email = email.downcase
+    email.downcase!
   end
 end
