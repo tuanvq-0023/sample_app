@@ -5,22 +5,25 @@ class UsersController < ApplicationController
   before_action :load_user, except: %i(index new create)
 
   def index
-    @users = User.page params[:page]
+    @users =
+      User.activated.page(params[:page]).per_page Settings.max_user_query_per_page
   end
 
   def new
     @user = User.new
   end
 
-  def show; end
+  def show
+    redirect_to root_url unless @user.activated
+  end
 
   def create
     @user = User.new user_params
 
     if @user.save
-      log_in @user
-      flash[:success] = t ".welcome_to_the_sample_app"
-      redirect_to @user
+      @user.send_activation_email
+      flash[:info] = t ".check_your_email"
+      redirect_to root_url
     else
       render :new
     end
@@ -62,6 +65,7 @@ class UsersController < ApplicationController
 
   def logged_in_user
     return if logged_in?
+    store_location
     flash[:danger] = t ".please_log_in."
     redirect_to login_url
   end
