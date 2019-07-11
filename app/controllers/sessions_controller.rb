@@ -2,13 +2,12 @@ class SessionsController < ApplicationController
   def new; end
 
   def create
-    user = get_user
-    rmb_set = Settings.remember_checked_default_value
+    user = User.find_by email: params[:session][:email].downcase
 
-    if user && user.authenticate(params[:session][:password])
+    if user&.authenticate(params[:session][:password])
       log_in user
-      params[:session][:remember_me] == rmb_set ? remember(user) : forget(user)
-      redirect_to user
+      session_remember_user user
+      redirect_back_or user
     else
       flash.now[:danger] = t ".invalid_user_info"
       render :new
@@ -22,7 +21,11 @@ class SessionsController < ApplicationController
 
   private
 
-  def get_user
-    User.find_by email: params[:session][:email].downcase
+  def session_remember_user user
+    if params[:session][:remember_me] == Settings.remember_checked_default_value
+      remember(user)
+    else
+      forget(user)
+    end
   end
 end

@@ -2,3 +2,6 @@ maximum_name_length: 50
 maximum_email_length: 250
 minimum_password_length: 6
 remember_checked_default_value: "1"
+default_gravatar_url: "https://secure.gravatar.com/avatar/"
+default_gravatar_size: 80
+max_user_query_per_page: 25

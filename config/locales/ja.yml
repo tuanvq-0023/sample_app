@@ -62,18 +62,40 @@ ja:
   users:
     create:
       welcome_to_the_sample_app: "ウェルカム"
-    new:
-      create_my_account: "アカウントを作る"
+    form:
       email: "メール"
       name: "名前"
       password: "パスワード"
-      password_confirmation: "パスワード確認" 
+      password_confirmation: "パスワード確認"
+    new:
+      create_my_account: "アカウントを作る" 
       sign_up: "サインアップ"
       signup_page_for_new_users: "これはサインアップユーザーの申し込みページになります"
-    invalid_user:
-      invalid_user: "無効なユーザー"
-      something_wrong: "すみません、何か問題がありました"
+    show:
       user_not_found: "ユーザーが見つかりません"
+    update:
+      profile_updated: "プロフィールが更新されました"
+      profile_update_failed: "プロフィールは更新されていません"
+      user_not_found: "ユーザーが見つかりません"
+      user_not_match: "ユーザーが一致しません"
+    destroy:
+      deleted_user: "ユーザーが削除されました"
+      deleted_failed: "削除できませんでした"
+      user_not_found: "ユーザーが見つかりません"
+      permission_denied: "アクセス拒否！ あなたは管理者ではありません"
+    index:
+      all_users: "リストユーザー"
+      please_log_in: "ログインしてください"
+    user:
+      delete: "削除"
+      confirm: "このユーザーを削除しますか？"
+    edit:
+      edit_user: "エディットユーザー"
+      save_changes: "変更内容を保存します"
+      update_your_profile: "プロフィールを更新"
+      change: "変更"
+      user_not_found: "ユーザーが見つかりません"
+      user_not_match: "ユーザーが一致しません"
   error_messages:
     the_form_contains: "フォームに含まれる"
   sessions:
@@ -86,3 +108,10 @@ ja:
       remember_me: "アカウントを覚えます"
     create:
       invalid_user_info: "無効なメールアドレス/パスワード"
+  views:
+    pagination:
+      first: "&laquo; 最初"
+      last: "最終 &raquo;"
+      previous: "&lsaquo; 前"
+      next: "次 &rsaquo;"
+      truncate: "&hellip;"
