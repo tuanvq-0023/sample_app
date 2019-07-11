@@ -5,3 +5,4 @@ remember_checked_default_value: "1"
 default_gravatar_url: "https://secure.gravatar.com/avatar/"
 default_gravatar_size: 80
 max_user_query_per_page: 25
+maximum_password_reset_time: 2

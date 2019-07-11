@@ -107,6 +107,7 @@ ja:
       new_user: "新しいユーザー"
       sign_up_now: "登録!"
       remember_me: "アカウントを覚えます"
+      forgot_password: "パスワードを忘れた"
     create:
       invalid_user_info: "無効なメールアドレス/パスワード"
       account_not_activated: "アカウントが有効になっていません"
@@ -123,9 +124,36 @@ ja:
       account_activated: "アカウントが有効になりました"
   user_mailer:
     account_activation:
+      account_activation: "アカウント開設"
       sample_app: "サンプルアプリケーション"
       hi: "こんにちは"
       welcome: "サンプルアプリケーションへようこそ"
       activation_guide: "アカウントを有効にするには、下のリンクをクリックしてください"
       activate: "有効にする"
-  account_activation: "アカウント開設"
+    password_reset:
+      password_reset: "パスワードのリセット"
+      reset_password_guide: "パスワードをリセットするには、下のリンクをクリックしてください"
+      reset_password: "パスワードを再設定します"
+      link_expire: "このリンクは2時間で有効期限が切れます"
+      case_not_request: "パスワードの再設定を要求しなかった場合は"
+      ignore_email_remind: "このメールを無視してください"
+  password_resets:
+    create:
+      password_reset_email_sent: "パスワード再設定の指示とともに送信されたメール"
+      email_not_found: "メールアドレスが見つかりません"
+    update:
+      empty_warning: "空にできません"
+      password_has_been_reset: "パスワードがリセットされました"
+      invalid reset link/user: "無効なリセットリンク/ユーザー"
+      user_not_found: "ユーザーが見つかりません"
+    edit:
+      reset_password: "パスワードを再設定します"
+      password: "パスワード"
+      password_confirmation: "パスワード確認"
+      update_password: "パスワードを更新します"
+      invalid reset link/user: "無効なリセットリンク/ユーザー"
+      user_not_found: "ユーザーが見つかりません"
+    new:
+      forgot_password: "パスワードを忘れた"
+      email: "メール"
+      submit: "提出します"
