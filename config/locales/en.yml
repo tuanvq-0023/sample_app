@@ -59,6 +59,7 @@ en:
       sign_up_now: "Sign up now!"
       this_is_the_home_page_for_the: "This is the home page for the"
       welcome_to_the: "Welcome to the"
+      micropost_feed: "Micropost Feed"
   users:
     create:
       welcome_to_the_sample_app: "Welcome to the Sample App"
@@ -74,6 +75,7 @@ en:
       signup_page_for_new_users: "This will be a signup page for new users"
     show:
       user_not_found: "User's profile not found"
+      microposts: "Microposts"
     update:
       profile_updated: "Profile has been updated"
       profile_update_failed: "Profile has not updated"
@@ -97,8 +99,16 @@ en:
       change: "Change"
       user_not_found: "User's profile not found"
       user_not_match: "User not match"
-  error_messages:
-    the_form_contains: "The form contains"
+  shared:
+    error_messages:
+      the_form_contains: "The form contains"
+      error: "error"
+    micropost_form:
+      compose_new_micropost: "Compose new micropost..."
+      post: "Post"
+    user_info:
+      view_my_profile: "view my profile"
+      micropost: "micropost"
   sessions:
     new:
       log_in: "Login"
@@ -157,3 +167,26 @@ en:
       forgot_password: "Forgot Password"
       email: "Email"
       submit: "Submit"
+  microposts:
+    create:
+      micropost_created: "Micropost has been created"
+      please_log_in: "Please login"
+    destroy:
+      micropost_deleted: "Micropost Deleted"
+      micropost_delete_failed: "Micropost delete failed"
+      micropost_not_found: "Micropost not found"
+      please_log_in: "Please login"
+    micropost:
+      posted: "Posted"
+      ago: "ago"
+      delete: "Delete"
+      confirmation: "You sure?"
+  maximum_file_size: "Maximum file size is %{maximum} MB"
+  choose_smaller_file: "Please choose a smaller file"
+  activerecord:
+    errors:
+      models:
+        micropost:
+          attributes:
+            picture:
+              picture_size_notice: "should be less then %{maximum} MB"

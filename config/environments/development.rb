@@ -45,6 +45,7 @@ Rails.application.configure do
     enable_starttls_auto: true
   }
 
+  config.middleware.use I18n::JS::Middleware
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
 
