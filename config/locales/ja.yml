@@ -59,6 +59,7 @@ ja:
       sign_up_now: "登録!"
       this_is_the_home_page_for_the: "これは"
       welcome_to_the: "ウェルカム"
+      micropost_feed: "マイクロポストフィード"
   users:
     create:
       welcome_to_the_sample_app: "ウェルカム"
@@ -74,6 +75,7 @@ ja:
       signup_page_for_new_users: "これはサインアップユーザーの申し込みページになります"
     show:
       user_not_found: "ユーザーが見つかりません"
+      microposts: "マイクロポスト"
     update:
       profile_updated: "プロフィールが更新されました"
       profile_update_failed: "プロフィールは更新されていません"
@@ -97,8 +99,16 @@ ja:
       change: "変更"
       user_not_found: "ユーザーが見つかりません"
       user_not_match: "ユーザーが一致しません"
-  error_messages:
-    the_form_contains: "フォームに含まれる"
+  shared:
+    error_messages:
+      the_form_contains: "フォームに含まれる"
+      error: "エラー"
+    micropost_form:
+      compose_new_micropost: "新しいマイクロポストを作成..."
+      post: "ポスト"
+    user_info:
+      view_my_profile: "プロフィールを見る"
+      micropost: "マイクロポスト"  
   sessions:
     new:
       log_in: "ログイン"
@@ -107,6 +117,7 @@ ja:
       new_user: "新しいユーザー"
       sign_up_now: "登録!"
       remember_me: "アカウントを覚えます"
+      forgot_password: "パスワードを忘れた"
     create:
       invalid_user_info: "無効なメールアドレス/パスワード"
       account_not_activated: "アカウントが有効になっていません"
@@ -123,9 +134,105 @@ ja:
       account_activated: "アカウントが有効になりました"
   user_mailer:
     account_activation:
+      account_activation: "アカウント開設"
       sample_app: "サンプルアプリケーション"
       hi: "こんにちは"
       welcome: "サンプルアプリケーションへようこそ"
       activation_guide: "アカウントを有効にするには、下のリンクをクリックしてください"
       activate: "有効にする"
-  account_activation: "アカウント開設"
+    password_reset:
+      password_reset: "パスワードのリセット"
+      reset_password_guide: "パスワードをリセットするには、下のリンクをクリックしてください"
+      reset_password: "パスワードを再設定します"
+      link_expire: "このリンクは2時間で有効期限が切れます"
+      case_not_request: "パスワードの再設定を要求しなかった場合は"
+      ignore_email_remind: "このメールを無視してください"
+  password_resets:
+    create:
+      password_reset_email_sent: "パスワード再設定の指示とともに送信されたメール"
+      email_not_found: "メールアドレスが見つかりません"
+    update:
+      empty_warning: "空にできません"
+      password_has_been_reset: "パスワードがリセットされました"
+      invalid reset link/user: "無効なリセットリンク/ユーザー"
+      user_not_found: "ユーザーが見つかりません"
+    edit:
+      reset_password: "パスワードを再設定します"
+      password: "パスワード"
+      password_confirmation: "パスワード確認"
+      update_password: "パスワードを更新します"
+      invalid reset link/user: "無効なリセットリンク/ユーザー"
+      user_not_found: "ユーザーが見つかりません"
+    new:
+      forgot_password: "パスワードを忘れた"
+      email: "メール"
+      submit: "提出します"
+  microposts:
+    create:
+      micropost_created: "マイクロポストが作成されました"
+      please_log_in: "ログインしてください"
+    destroy:
+      micropost_deleted: "マイクロポスト削除"
+      micropost_delete_failed: "マイクロポストの削除に失敗しました"
+      micropost_not_found: "マイクロポストが見つかりません"
+      please_log_in: "ログインしてください"
+    micropost:
+      posted: "投稿されました"
+      ago: "前に"
+      delete: "削除"
+      confirmation: "確信してるの？"
+  maximum_file_size: "最大ファイルサイズは %{maximum} MB"
+  choose_smaller_file: "小さいファイルを選択してください"
+  activerecord:
+    errors:
+      models:
+        micropost:
+          attributes:
+            picture:
+              picture_size_notice: "%{maximum} MB未満にする必要があります"
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: 約1時間
+        other: 約%{count}時間
+      about_x_months:
+        one: 約1ヶ月
+        other: 約%{count}ヶ月
+      about_x_years:
+        one: 約1年
+        other: 約%{count}年
+      almost_x_years:
+        one: 1年弱
+        other: "%{count}年弱"
+      half_a_minute: 30秒前後
+      less_than_x_seconds:
+        one: 1秒以内
+        other: "%{count}秒未満"
+      less_than_x_minutes:
+        one: 1分以内
+        other: "%{count}分未満"
+      over_x_years:
+        one: 1年以上
+        other: "%{count}年以上"
+      x_seconds:
+        one: 1秒
+        other: "%{count}秒"
+      x_minutes:
+        one: 1分
+        other: "%{count}分"
+      x_days:
+        one: 1日
+        other: "%{count}日"
+      x_months:
+        one: 1ヶ月
+        other: "%{count}ヶ月"
+      x_years:
+        one: 1年
+        other: "%{count}年"
+    prompts:
+      second: 秒
+      minute: 分
+      hour: 時
+      day: 日
+      month: 月
+      year: 年

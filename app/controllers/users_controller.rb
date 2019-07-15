@@ -6,7 +6,10 @@ class UsersController < ApplicationController
 
   def index
     @users =
-      User.activated.page(params[:page]).per_page Settings.max_user_query_per_page
+      Kaminari
+      .paginate_array(User.activated)
+      .page(params[:page])
+      .per Settings.max_user_query_per_page
   end
 
   def new
@@ -15,6 +18,11 @@ class UsersController < ApplicationController
 
   def show
     redirect_to root_url unless @user.activated
+    @microposts =
+      Kaminari
+      .paginate_array(@user.microposts)
+      .page(params[:page])
+      .per Settings.max_micropost_per_page
   end
 
   def create
