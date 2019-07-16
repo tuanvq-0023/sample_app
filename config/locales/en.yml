@@ -99,6 +99,17 @@ en:
       change: "Change"
       user_not_found: "User's profile not found"
       user_not_match: "User not match"
+    show_follow:
+      view_my_profile: "View my profile"
+      microposts: "Microposts"
+    following:
+      following: "Following"
+    followers:
+      followers: "Followers"
+    follow:
+      follow: "Follow"
+    unfollow:
+      unfollow: "Unfollow"
   shared:
     error_messages:
       the_form_contains: "The form contains"
@@ -109,6 +120,9 @@ en:
     user_info:
       view_my_profile: "view my profile"
       micropost: "micropost"
+    stats:
+      following: "Following"
+      followers: "Followers"
   sessions:
     new:
       log_in: "Login"
@@ -181,6 +195,13 @@ en:
       ago: "ago"
       delete: "Delete"
       confirmation: "You sure?"
+  relationships:
+    create:
+      user_not_found: "User not found"
+      followed: "Followed"
+    destroy:
+      user_not_found: "User/Relationship not found"
+      unfollow: "Unfollow" 
   maximum_file_size: "Maximum file size is %{maximum} MB"
   choose_smaller_file: "Please choose a smaller file"
   activerecord:

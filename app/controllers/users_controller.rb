@@ -58,6 +58,26 @@ class UsersController < ApplicationController
     redirect_to users_url
   end
 
+  def following
+    @title = t ".following"
+    @users =
+      Kaminari
+      .paginate_array(@user.following)
+      .page(params[:page])
+      .per Settings.max_following_per_page
+    render :show_follow
+  end
+
+  def followers
+    @title = t ".followers"
+    @users =
+      Kaminari
+      .paginate_array(@user.followers)
+      .page(params[:page])
+      .per Settings.max_follower_per_page
+    render :show_follow
+  end
+
   private
 
   def load_user
