@@ -1,0 +1,12 @@
+$("#follow_form").html("<%= escape_javascript(render("users/unfollow")) %>");
+$("#followers").html("<%= @user.followers.count %>");
+flash_danger = "<%= flash[:danger] %>"
+flash_message = "<%= flash[:message] %>"
+if (flash_danger) {
+  $("#danger").html("<%= flash[:danger] %>");
+  $("#danger").show();
+}
+if (flash_message) {
+  $("#message").html("<%= flash[:message] %>");
+  $("#message").show();
+}

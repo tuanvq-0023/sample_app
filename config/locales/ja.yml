@@ -99,6 +99,17 @@ ja:
       change: "変更"
       user_not_found: "ユーザーが見つかりません"
       user_not_match: "ユーザーが一致しません"
+    show_follow:
+      view_my_profile: "プロフィールを見る"
+      microposts: "マイクロポスト"
+    following:
+      following: "フォロー"
+    followers:
+      followers: "フォロワー"
+    follow:
+      follow: "フォロー"
+    unfollow:
+      unfollow: "フォローしない"
   shared:
     error_messages:
       the_form_contains: "フォームに含まれる"
@@ -108,7 +119,10 @@ ja:
       post: "ポスト"
     user_info:
       view_my_profile: "プロフィールを見る"
-      micropost: "マイクロポスト"  
+      micropost: "マイクロポスト"
+    stats:
+      following: "フォロー"
+      followers: "フォロワー"  
   sessions:
     new:
       log_in: "ログイン"
@@ -181,6 +195,13 @@ ja:
       ago: "前に"
       delete: "削除"
       confirmation: "確信してるの？"
+  relationships:
+    create:
+      user_not_found: "ユーザーが見つかりません"
+      followed: "フォロー"
+    destroy:
+      user_not_found: "ユーザーが見つかりません"
+      unfollow: "フォローしない"
   maximum_file_size: "最大ファイルサイズは %{maximum} MB"
   choose_smaller_file: "小さいファイルを選択してください"
   activerecord:

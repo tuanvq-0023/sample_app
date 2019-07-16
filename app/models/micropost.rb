@@ -2,6 +2,10 @@ class Micropost < ApplicationRecord
   belongs_to :user
   scope :order_by_created_time, ->{order(created_at: :desc)}
   scope :user_owner, ->(user_id){where "user_id = ?", user_id}
+  scope :follow_only, (lambda do |params|
+    where("user_id IN (#{params[:following_ids]}) OR user_id = :user_id",
+      user_id: params[:user_id])
+  end)
   mount_uploader :picture, PictureUploader
   validates :user_id, presence: true
   validates :content,
